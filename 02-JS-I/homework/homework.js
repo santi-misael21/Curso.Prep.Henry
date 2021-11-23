@@ -16,7 +16,7 @@ const nuevaResta = 10 - 5 === 5;
 const nuevaMultiplicacion = 10 * 4 === 40 ;
 
 // Resuelve el siguiente problema matemático:
-const nuevoModulo = 21 % 5 === 5;
+const nuevoModulo = 21 % 5 === 1;
 
 
 // En los próximos 22 problemas, deberás completar la función.
@@ -60,7 +60,7 @@ function sonIguales(x, y) {
   // Devuelve "true" si "x" e "y" son iguales
   // De lo contrario, devuelve "false"
   // Tu código:
-  if(X===Y){
+  if(x===y){
     return true
   }else{
     return false
@@ -72,7 +72,7 @@ function tienenMismaLongitud(str1, str2) {
   // Devuelve "true" si las dos strings tienen la misma longitud
   // De lo contrario, devuelve "false"
   // Tu código:
-  return str1.length === str2.lenght;
+  return str1.length === str2.length;
 }
 
 function menosQueNoventa(num) {
@@ -86,7 +86,7 @@ function mayorQueCincuenta(num) {
   // Devuelve "true" si el argumento de la función "num" es mayor que cincuenta
   // De lo contrario, devuelve "false"
   // Tu código:
-  return (mayorQueCincuenta>50);
+  return (num>50);
 }
 
 function obtenerResto(x, y) {
@@ -154,9 +154,12 @@ function esPositivo(numero) {
   //Si el número es positivo, devolver ---> "Es positivo"
   //Si el número es negativo, devolver ---> "Es negativo"
   //Si el número es 0, devuelve false
-  if (numero>=0){
+  if (numero>0){
   return('Es positivo')
-}else{
+}if(numero===0){
+  return(false)
+}
+else{
   return('Es negativo');
 }
 }
@@ -194,7 +197,7 @@ function retornarPerimetro(lado){
   //Escibe una función la cual reciba el valor del lado de un cuadrado
   // y retorne su perímetro.
   //Escribe tu código aquí
-  return(lado*4+' cm')
+  return(lado*4)
 }
 
 
@@ -210,7 +213,7 @@ function deEuroAdolar(euro){
   //que reciba
   //como parámetro un número de euros y calcule el cambio en dólares.
   //Escribe tu código aquí
-  return(euro*1.20 + ' Dólares')
+  return(euro*1.20)
 }
 
 
