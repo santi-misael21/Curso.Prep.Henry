@@ -134,6 +134,7 @@ function redondearNumero(num) {
   return Math.round(num);
 }
 
+
 function redondearHaciaArriba(num) {
   // Redondea "num" hacia arriba (al próximo entero) y devuélvelo
   // Tu código:
@@ -146,6 +147,7 @@ function numeroRandom() {
   return Math.random();
 }
 
+
 function esPositivo(numero) {
   //La función va a recibir un entero. Devuelve como resultado 
   //una cadena de texto que indica si el número es positivo o negativo. 
@@ -156,6 +158,7 @@ function esPositivo(numero) {
   return('Es positivo')
 }else{
   return('Es negativo');
+}
 }
 
 function agregarSimboloExclamacion(str) {
