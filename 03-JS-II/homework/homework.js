@@ -21,7 +21,7 @@ function mayoriaDeEdad(edad) {
   if (edad>=18){
     return ("Allowed");
   }else{
-    return ("Not Allowed");
+    return ("Not allowed");
   }
 }
   
@@ -90,7 +90,7 @@ function esDiezOCinco(numero) {
   // Devuelve "true" si "numero" es 10 o 5
   // De lo contrario, devuelve "false"
   // Tu código:
-  return[numero===10||numero===5]
+  return numero===10||numero===5
 }
 
 function estaEnRango(numero) {
@@ -108,13 +108,16 @@ function esEntero(numero) {
   // De lo contrario, devuelve "false"
   // Pista: Puedes resolver esto usando `Math.floor`
   // Tu código:
+  if (numero ===0)
+  return true
   return(numero% Math.floor(numero)===0)
 }
 
 function fizzBuzz(numero) {
   // Si "numero" es divisible entre 3, devuelve "fizz"
   // Si "numero" es divisible entre 5, devuelve "buzz"
-  // Si "numero" es divisible entre 3 y 5 (ambos), devuelve "fizzbuzz"
+  // Si "numero" es divisible entre 3 y 5 (ambos), 
+  // devuelve "fizzbuzz"
   // De lo contrario, devuelve el numero
   if(numero%5===0&&numero%3===0){
     return("fizzbuzz")
@@ -124,7 +127,7 @@ function fizzBuzz(numero) {
   }
   if(numero%3===0){
     return("fizz")
-  }
+  }else{return numero}
 }
 
 function operadoresLogicos(num1, num2, num3) {
@@ -187,9 +190,10 @@ function tablaDelSeis(){
   //(del 0 al 60).
   //La función devuelve un array con los resultados de la tabla de multiplicar del
   // 6 en orden creciente.
-  //Escribe tu código aquí  
-  for (t=0; t<=60; t=t+6)
-  console.log(t)
+  //Escribe tu código aquí 
+  var t; 
+  for (t=6; t<=60; t=t+6)
+  console.log (t)
 }
 
 function tieneTresDigitos(numero){
