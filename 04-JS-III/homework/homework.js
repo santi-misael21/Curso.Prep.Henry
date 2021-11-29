@@ -4,7 +4,7 @@ function devolverPrimerElemento(array) {
   // Devuelve el primer elemento de un  array (pasado por parametro)
   // Tu código:
   array=[10, 20]
-  console.log(array[0])
+  console.log(array [0])
 }
 
 
