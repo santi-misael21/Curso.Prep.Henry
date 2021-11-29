@@ -12,12 +12,15 @@ function devolverUltimoElemento(array) {
   // Devuelve el último elemento de un array
   // Tu código:
   array=[10, 11, 12, 13]
+  console.log(array[array.length -1])
 }
 
 
 function obtenerLargoDelArray(array) {
   // Devuelve el largo de un array
   // Tu código:
+  array=[1,1,1,2,2,2]
+  console.log(array.length)
 }
 
 
