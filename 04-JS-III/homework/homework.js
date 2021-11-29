@@ -4,13 +4,14 @@ function devolverPrimerElemento(array) {
   // Devuelve el primer elemento de un  array (pasado por parametro)
   // Tu código:
   array=[10, 20];
-  console.log(array[array.length - array.length]);
+  console.log(array[0]);
 }
 
 
 function devolverUltimoElemento(array) {
   // Devuelve el último elemento de un array
   // Tu código:
+  array=[10, 11, 12, 13]
 }
 
 
