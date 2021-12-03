@@ -139,9 +139,9 @@ function diaDeLaSemana(numeroDeDia) {
   //Escribe tu código aquí   
   if(numeroDeDia===7||numeroDeDia===6)
 {
-  return("Es finde")
+  return("Es fin de semana")
 }else if(numeroDeDia>=1&&numeroDeDia<=5){
-  return("mañana e' día laborhal")}
+  return("Es dia Laboral")}
 }
 
 
@@ -174,13 +174,39 @@ function mesesDelAño(array) {
   // "Enero", "Marzo" y "Noviembre", guardarlo en nuevo array y retornarlo.
   //Si alguno de los meses no está, devolver: "No se encontraron los meses pedidos"
   // Tu código:
-}
+  var n=[]
+  for(i=0;i<=array.length;i++){
+    if(array[i]==="Enero"){
+      n[0]=array[i]
+    }
+    if(array[i]==="Marzo"){
+      n[1]=array[i]
+    }
+    if(array[i]==="Noviembre"){
+      n[2]=array[i]
+    }
+  }
 
+  for(i=0;i<=array.length;i++){console.log((n[i]))}
+    console.log((n.length)===3)
+    console.log((n.length)===(array.length))
+ 
+  for(i=0;i<=array.length;i++){console.log((n[i].length))}
+}
+    
 
 function mayorACien(array) {
-  //La función recibe un array con enteros entre 0 y 200. Recorrer el array y guardar en un nuevo array sólo los
+  //La función recibe un array con enteros entre 0 y 200. Recorrer el array y guardar 
+  //en un nuevo array sólo los
   //valores mayores a 100 (no incluye el 100). Finalmente devolver el nuevo array.
   // Tu código:
+  var k=[]
+  for(i=0;i<array.length;i++){
+    if(array[i]>100){
+      k=array[i]
+      console.log(array[i])
+    }
+  }
 }
 
 
@@ -192,6 +218,12 @@ function breakStatement(numero) {
   //devolver: "Se interrumpió la ejecución"
   //Pista: usá el statement 'break'
   // Tu código:
+var nuevoarr=[]
+for(i=1;i<=10;i++){
+  nuevoarr=numero+i*2
+  console.log (nuevoarr)
+  if(nuevoarr===i){console.log("Se interrumpió la ejecución"); break}
+  }
 }
 
 
@@ -199,9 +231,16 @@ function continueStatement(numero) {
   //Iterar en un bucle aumentando en 2 el numero recibido hasta un límite de 10 veces.
   //Guardar cada nuevo valor en un array.    
   //Devolver el array
-  //Cuando el número de iteraciones alcance el valor 5, no se suma en ese caso y se continua con la siguiente iteración
+  //Cuando el número de iteraciones tenga un valor de 5, no se suma en ese caso 
+  //y se continua con la siguiente iteración
   //Pista: usá el statement 'continue'
   // Tu código:
+  var narray=[]
+  for(i=1;i<=10;i++){
+    if(i===5){continue}
+    narray=numero+i*2
+    console.log(narray)
+  }
 }
 
 
