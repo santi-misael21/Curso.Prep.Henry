@@ -204,9 +204,9 @@ function mayorACien(array) {
   for(i=0;i<array.length;i++){
     if(array[i]>100){
       k=array[i]
-      console.log(array[i])
     }
   }
+  return k 
 }
 
 
@@ -221,9 +221,10 @@ function breakStatement(numero) {
 var nuevoarr=[]
 for(i=1;i<=10;i++){
   nuevoarr=numero+i*2
-  console.log (nuevoarr)
+  
   if(nuevoarr===i){console.log("Se interrumpió la ejecución"); break}
   }
+  return (nuevoarr)
 }
 
 
@@ -239,8 +240,9 @@ function continueStatement(numero) {
   for(i=1;i<=10;i++){
     if(i===5){continue}
     narray=numero+i*2
-    console.log(narray)
+    
   }
+  return(narray)
 }
 
 
