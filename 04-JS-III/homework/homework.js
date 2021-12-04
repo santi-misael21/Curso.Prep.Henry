@@ -225,10 +225,11 @@ function breakStatement(numero) {
   //Pista: usá el statement 'break'
   // Tu código:
 var nuevoarr=[]
+var b=0
 for(i=1;i<=10;i++){
-  nuevoarr=numero+i*2
-  
-  if(nuevoarr===i){console.log("Se interrumpió la ejecución"); break}
+  nuevoarr[b]=numero+i*2
+  if(nuevoarr[b]===i){console.log("Se interrumpió la ejecución"); break}
+  b=b+1
   }
   return (nuevoarr)
 }
@@ -243,10 +244,13 @@ function continueStatement(numero) {
   //Pista: usá el statement 'continue'
   // Tu código:
   var narray=[]
+  var n=0
+  var o=1
   for(i=1;i<=10;i++){
     if(i===5){continue}
-    narray=numero+i*2
-    
+    narray[n]=numero+o*2
+    n=n+1
+    o=o+1
   }
   return(narray)
 }
