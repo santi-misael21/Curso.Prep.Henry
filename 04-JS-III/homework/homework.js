@@ -226,7 +226,7 @@ function breakStatement(numero) {
   // Tu código:
 var nuevoarr=[]
 var b=0
-for(i=1;i<=10;i++){
+for(i=2;i<=11;i++){
   nuevoarr[b]=numero+i*2
   if(nuevoarr[b]===i){console.log("Se interrumpió la ejecución"); break}
   b=b+1
