@@ -59,7 +59,7 @@ function dePalabrasAFrase(palabras) {
   // con espacios entre cada palabra
   // Ejemplo: ['Hello', 'world!'] -> 'Hello world!'
   // Tu código:
-  return palabras.join("")
+  return palabras.join(" ")
 }
 
 
@@ -68,8 +68,9 @@ function arrayContiene(array, elemento) {
   // Devuelve "true" si está, o "false" si no está
   // Tu código:
   for(i=0;i<array.length;i++){
-    return(array[i]===elemento)
+    if (array[i]===elemento) {return true}
   }
+  return false
 }
 
 
@@ -119,15 +120,15 @@ function multiplicarArgumentos() {
 
 
 function cuentoElementos(arreglo){
-  //Realiza una función que retorne la cantidad de los elementos del arreglo cuyo valor 
-  //es mayor a 18.  
+  //Realiza una función que retorne la cantidad de los elementos 
+  //del arreglo cuyo valor es mayor a 18.  
   //Escribe tu código aquí
   var j=0
   for(i=0;i<=arreglo.length;i++){
   if(arreglo[i]>18){
     j=j+1
   }}
-  console.log(j)
+  return(j)
 }
 
 
@@ -137,10 +138,11 @@ function diaDeLaSemana(numeroDeDia) {
   //Realiza una función que dado el número del día de la semana, retorne: Es fin de semana
   //si el día corresponde a Sábado o Domingo y “Es dia Laboral” en caso contrario. 
   //Escribe tu código aquí   
-  if(numeroDeDia===7||numeroDeDia===6)
+
+  if(numeroDeDia===1||numeroDeDia===7)
 {
   return("Es fin de semana")
-}else if(numeroDeDia>=1&&numeroDeDia<=5){
+}else if(numeroDeDia>=2&&numeroDeDia<=6){
   return("Es dia Laboral")}
 }
 
@@ -172,26 +174,27 @@ function mesesDelAño(array) {
   //Dado un array que contiene algunos meses del año desordenados, recorrer el 
   //array buscando los meses de 
   // "Enero", "Marzo" y "Noviembre", guardarlo en nuevo array y retornarlo.
-  //Si alguno de los meses no está, devolver: "No se encontraron los meses pedidos"
+  //Si alguno de los meses no está, devolver: 
+  //"No se encontraron los meses pedidos"
   // Tu código:
   var n=[]
+  var m=0
   for(i=0;i<=array.length;i++){
     if(array[i]==="Enero"){
-      n[0]=array[i]
+      n[m]=array[i]
+      m=m+1
     }
     if(array[i]==="Marzo"){
-      n[1]=array[i]
+      n[m]=array[i]
+      m=m+1
     }
     if(array[i]==="Noviembre"){
-      n[2]=array[i]
+      n[m]=array[i]
+      m=m+1
     }
   }
-
-  for(i=0;i<=array.length;i++){console.log((n[i]))}
-    console.log((n.length)===3)
-    console.log((n.length)===(array.length))
- 
-  for(i=0;i<=array.length;i++){console.log((n[i].length))}
+    if((n.length)===3&&(array.length)>=3){return((n))}
+    else return "No se encontraron los meses pedidos"
 }
     
 
