@@ -3,17 +3,40 @@
 function crearUsuario() {
   // Crea una Clase de ES6 o una función constructor llamada "Usuario"
   // Debe aceptar un objeto "opciones" con las propiedades "usuario", "nombre", "email" y "password"
-  // En el `contructor`, define el usuario, el nombre, el email y la contraseña
-  // El `contructor` debe tener un método llamado "saludar" en su `prototype` que devuelva una string 'Hola, mi nombre es {{nombre}}'
+  // En el `constructor`, define el usuario, el nombre, el email y la contraseña
+
+  // El `constructor` debe tener un método llamado "saludar" en su `prototype` que devuelva una string 'Hola, mi nombre 
+  // es {{nombre}}'
   // {{nombre}} debe ser el nombre definido en cada instancia
   // Devuelve la clase
   // Tu código:
+function Usuario(opciones) {              //Clase de ES6 o función constructor llamada "Usuario"
+                                          //con el (objeto "opciones")
+  this.usuario = opciones.usuario;        //extensión de (opciones) ---> opciones.usuario, ..., etc.
+  this.nombre = opciones.nombre;          
+  this.email = opciones.email;
+  this.password = opciones.password;      //definidas las propiedades acá en el constructor//
+}
+
+Usuario.prototype.saludar = function() {  //método llamado saludar en el prototype del constructor, o sea Usuario: 
+                                          //enEstaClase.ubicarEnElPrototype.esteMétodo = f(){return "";}
+ console.log('Hola, mi nombre es ' + this.nombre);   //nombre definido en cada instancia
+};
+
+console.log (Usuario);                            // Devuelve la clase
+
 }
 
 function agregarMetodoPrototype(Constructor) {
   // Agrega un método al Constructor del `prototype`
   // El método debe llamarse "saludar" y debe devolver la string "Hello World!"
   // Tu código:
+ /* function saludar(){
+    console.log("Hola mundo")
+  }
+  saludar.prototype.hola= function(){
+    return saludar()}*/
+}
 }
 
 function agregarStringInvertida() {
