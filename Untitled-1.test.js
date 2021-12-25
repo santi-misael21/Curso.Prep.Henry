@@ -1,14 +1,20 @@
-import { 
-    crearUsuario, agregarMetodoPrototype, agregarStringInvertida, crearInstanciaPersona, agregarMetodo, Persona 
-} from '../Untitled-2.js';
+const {
+    crearUsuario,
+	agregarMetodoPrototype,
+	agregarStringInvertida,
+	crearInstanciaPersona,
+	agregarMetodo,
+	Persona
+} = require('../homework');
 
-describe('agregarMetodoPrototype(Constructor)', function() {
-	it('should add the method saludar to the constructor', function() {
-		function Test() {
-			this.test = true;
-		}
-		agregarMetodoPrototype(Test);
-		const test = new Test();
-		expect(test.saludar()).toBe('Hello World!');
+describe('crearUsuario()', function() {
+	it('should return a user constructor that correctly builds user objects', function() {
+		const Usuario = crearUsuario();
+		const user = new Usuario({usuario: 'jssamuel', nombre: 'Samuel', email: 'samuel@email.com', password: 'LoveJS' });
+		expect(user.usuario).toBe('jssamuel');
+		expect(user.nombre).toBe('Samuel');
+		expect(user.email).toBe('samuel@email.com');
+		expect(user.password).toBe('LoveJS');
+    	expect(user.saludar()).toBe('Hola, mi nombre es Samuel');
 	});
 });
