@@ -3,7 +3,7 @@ const {
 } = require('../Untitled-2');
 
 describe('crearUsuario()', function() {
-	it('should return a user constructor that correctly builds user objects', function() {
+	it('', function() {
 		const Usuario = crearUsuario();
 		const user = new Usuario({usuario: 'jssamuel', nombre: 'Samuel', email: 'samuel@email.com', password: 'LoveJS' });
 		expect(user.usuario).toBe('jssamuel');
