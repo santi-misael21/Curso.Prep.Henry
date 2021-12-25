@@ -1,20 +1,22 @@
 function crearUsuario() {
-    function Usuario(opciones) {
+    class Usuario {
+    constructor(opciones) {
       this.usuario = opciones.usuario;
       this.nombre = opciones.nombre;
       this.email = opciones.email;
       this.password = opciones.password;
     }
-  
-    Usuario.prototype.saludar = function() {
+    saludar() {
       return 'Hola, mi nombre es ' + this.nombre;
-    };
+    }
+  }
+  
   
     return Usuario;
   
   }
 
-  module.exports = {
+  export default {
     crearUsuario,
   };
   
