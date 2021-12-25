@@ -1,4 +1,4 @@
-import { isVowel, countVowels } from '.';
+const {isVowel, countVowels} =require('Untitled-2.js');
 
 describe("isVowel", ()=>{
     it('Debería retornar true para input "a"', ()=>{
