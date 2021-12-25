@@ -1,4 +1,11 @@
-
+const {
+    crearUsuario,
+	agregarMetodoPrototype,
+	agregarStringInvertida,
+	crearInstanciaPersona,
+	agregarMetodo,
+	Persona
+} = require('../homework');
 
 describe('agregarMetodoPrototype(Constructor)', function() {
 	it('should add the method saludar to the constructor', function() {
