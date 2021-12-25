@@ -1,18 +1,20 @@
-const {isVowel, countVowels} =requires ('.');
+const {
+    crearUsuario,
+	agregarMetodoPrototype,
+	agregarStringInvertida,
+	crearInstanciaPersona,
+	agregarMetodo,
+	Persona
+} = require('../homework');
 
-describe("isVowel", ()=>{
-    it('Debería retornar true para input "a"', ()=>{
-        expect(isVowel("a")).toBe(true);
-    })
 
-    it('Debería retornar false para input "c"',()=>{
-        expect(isVowel("c")).toBe(false);
-    });
-})
-describe("countVowels",()=>{
-    it ("Debería...",()=>{
-        expect(countVowels("abc")).toEqual({
-            a:1,e:0,i:0,o:0,u:0
-        })
-    })
-})
+describe('agregarMetodoPrototype(Constructor)', function() {
+	it('should add the method saludar to the constructor', function() {
+		function Test() {
+			this.test = true;
+		}
+		agregarMetodoPrototype(Test);
+		const test = new Test();
+		expect(test.saludar()).toBe('Hello World!');
+	});
+});

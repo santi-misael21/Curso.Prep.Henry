@@ -1,10 +1,9 @@
-export function isVowel(char) { return "aeiou".includes(char); }
-
-export function countVowels(str) { return [...str].reduce(
-    (memo, char) => (
-        memo.hasOwnProperty(char)
-            ? { ...memo, [char]: memo[char] +1}
-            : memo
-    ),
-    {a:0, e:0, i=0, o=0,u=0},
-);     } 
+function agregarMetodoPrototype(Constructor) {
+    // Agrega un método al Constructor del `prototype`
+    // El método debe llamarse "saludar" y debe devolver la string "Hello World!"
+    // Tu código:
+    Constructor.prototype.saludar = function() {
+      return 'Hello World!';
+    };
+  
+  }
