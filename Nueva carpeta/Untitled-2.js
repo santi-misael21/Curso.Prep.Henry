@@ -16,10 +16,5 @@ function crearUsuario() {
 
   module.exports = {
     crearUsuario,
-    agregarMetodoPrototype,
-    agregarStringInvertida,
-    crearInstanciaPersona,
-    agregarMetodo, 
-    Persona
   };
   

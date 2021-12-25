@@ -1,10 +1,5 @@
 const {
     crearUsuario,
-	agregarMetodoPrototype,
-	agregarStringInvertida,
-	crearInstanciaPersona,
-	agregarMetodo,
-	Persona
 } = require('../Untitled-2');
 
 describe('crearUsuario()', function() {
