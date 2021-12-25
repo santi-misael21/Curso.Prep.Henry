@@ -1,4 +1,6 @@
-import { crearUsuario } from '../Untitled-2';
+const {
+    crearUsuario,
+} = require('../Untitled-2');
 
 describe('El nombre que yo le pongo', function() {
 	it("String obligatorio indeterminante", function() {
