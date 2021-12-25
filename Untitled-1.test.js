@@ -1,4 +1,4 @@
-const {isVowel, countVowels} =require(".");
+const {isVowel, countVowels} =require();
 
 describe("isVowel", ()=>{
     it('Debería retornar true para input "a"', ()=>{
