@@ -1,17 +1,17 @@
+const {isVowel, countVowels} =require(".");
 
-
-describe("esVocal", ()=>{
+describe("isVowel", ()=>{
     it('Debería retornar true para input "a"', ()=>{
-        expect(esVocal("a")).toBe(true);
+        expect(isVowel("a")).toBe(true);
     })
 
     it('Debería retornar false para input "c"',()=>{
-        expect(esVocal("c")).toBe(false);
+        expect(isVowel("c")).toBe(false);
     });
 })
-describe("contarVocales",()=>{
+describe("countVowels",()=>{
     it ("Debería...",()=>{
-        expect(contarVocales("abc")).toEqual({
+        expect(countVowels("abc")).toEqual({
             a:1,e:0,i:0,o:0,u:0
         })
     })

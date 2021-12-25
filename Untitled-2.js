@@ -1,6 +1,6 @@
-exports.esVocal =char => "aeiou".includes(char);
+exports.isVowel =char => "aeiou".includes(char);
 
-exports.contarVocales =str => [...str].reduce(
+exports.countVowels =str => [...str].reduce(
     (memo, char) => (
         memo.hasOwnProperty(char)
             ? { ...memo, [char]: memo[char] +1}
