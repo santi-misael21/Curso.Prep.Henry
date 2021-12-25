@@ -5,7 +5,7 @@ const {
 	crearInstanciaPersona,
 	agregarMetodo,
 	Persona
-} = require('../homework');
+} = requires('../homework');
 
 describe('agregarMetodoPrototype(Constructor)', function() {
 	it('should add the method saludar to the constructor', function() {
