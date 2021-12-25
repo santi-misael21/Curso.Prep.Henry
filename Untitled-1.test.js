@@ -1,11 +1,6 @@
-const {
-    crearUsuario,
-	agregarMetodoPrototype,
-	agregarStringInvertida,
-	crearInstanciaPersona,
-	agregarMetodo,
-	Persona
-} = requires('../homework');
+import { 
+    crearUsuario, agregarMetodoPrototype, agregarStringInvertida, crearInstanciaPersona, agregarMetodo, Persona 
+} from '../Untitled-2.js';
 
 describe('agregarMetodoPrototype(Constructor)', function() {
 	it('should add the method saludar to the constructor', function() {
