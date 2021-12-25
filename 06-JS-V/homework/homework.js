@@ -21,10 +21,10 @@ function Usuario(opciones) {              //Clase de ES6 o función constructor 
 
 Usuario.prototype.saludar = function() {  //método llamado saludar en el prototype del constructor, o sea Usuario: 
                                           //enEstaClase.ubicarEnElPrototype.esteMétodo = f(){return "";}
- console.log('Hola, mi nombre es ' + this.nombre);   //nombre definido en cada instancia
+ return 'Hola, mi nombre es ' + this.nombre;   //nombre definido en cada instancia
 };
 
-console.log (Usuario);                            // Devuelve la clase
+return Usuario;                            // Devuelve la clase
 
 }
 
