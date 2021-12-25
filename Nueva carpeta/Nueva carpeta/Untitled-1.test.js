@@ -1,6 +1,6 @@
 const {
     crearUsuario,
-} = require('/Untitled-2');
+} = require('.../Untitled-2');
 
 describe('crearUsuario()', function() {
 	it("string obligatorio indeterminante", function() {
