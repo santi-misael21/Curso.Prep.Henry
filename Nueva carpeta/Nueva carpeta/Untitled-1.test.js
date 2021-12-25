@@ -1,6 +1,6 @@
 const {
     crearUsuario,
-} = require('../Untitled-2');
+} = require('../Untitled');
 
 describe('crearUsuario()', function() {
 	it('should return a user constructor that correctly builds user objects', function() {
