@@ -7,3 +7,13 @@ function agregarMetodoPrototype(Constructor) {
     };
   
   }
+
+  module.exports = {
+    crearUsuario,
+    agregarMetodoPrototype,
+    agregarStringInvertida,
+    crearInstanciaPersona,
+    agregarMetodo, 
+    Persona
+  };
+  
