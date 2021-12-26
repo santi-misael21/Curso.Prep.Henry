@@ -1,20 +1,9 @@
-function crearUsuario() {
-    function Usuario(opciones) {
-      this.usuario = opciones.usuario;
-      this.nombre = opciones.nombre;
-      this.email = opciones.email;
-      this.password = opciones.password;
-    }
-  
-    Usuario.prototype.saludar = function() {
-      return 'Hola, mi nombre es ' + this.nombre;
-    };
-  
-    return Usuario;
-  
+function operacionMatematica(n1, n2, cb) {
+  function cb (n1,n2) {
+    return cb (n1, n2)
   }
-
-  module.exports = {
-    crearUsuario,
-  };
+}
   
+module.exports = {
+  operacionMatematica,
+};
