@@ -1,15 +1,11 @@
 const {
-    crearUsuario,
-} = require('../Untitled-2');
+	operacionMatematica
+} = require('..Untitled-2.js');
 
-describe('El nombre que yo le pongo', function() {
-	it("String obligatorio indeterminante", function() {
-		const Usuario = crearUsuario();
-		const user = new Usuario({usuario: 'jssamuel', nombre: 'Samuel', email: 'samuel@email.com', password: 'LoveJS' });
-		expect(user.usuario).toBe('jssamuel');
-		expect(user.nombre).toBe('Samuel');
-		expect(user.email).toBe('samuel@email.com');
-		expect(user.password).toBe('LoveJS');
-    	expect(user.saludar()).toBe('Hola, mi nombre es Samuel');
+describe('operacionMatematica(n1, n2, cb)', function() {
+	it('should return the callback function passing it the received arguments', function() {
+		const cb = jest.fn();
+		operacionMatematica(100, 20, cb);
+		expect(cb).toHaveBeenCalled();
 	});
 });
