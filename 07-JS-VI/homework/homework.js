@@ -23,13 +23,17 @@ function sumarArray(numeros, cb) {
   // Pasa el resultado a `cb`
   // No es necesario devolver nada
   //Tu código:
-  
+  cb= numeros.reduce(function(acc, currVal) {return acc + currVal}) 
+
 }
 
 function forEach(array, cb) {
   // Itera sobre la matriz "array" y pasa los valores al callback uno por uno
   // Pista: Estarás invocando a `cb` varias veces (una por cada valor en la matriz)
   //Tu código:
+  array.forEach(function(el, index) {
+     cb(el);
+     });
 }
 
 function map(array, cb) {
