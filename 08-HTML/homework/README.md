@@ -27,7 +27,7 @@ II Añade un poco de estilo
   A. Agregue la etiqueta de estilo a su documento HTML.
   B. Asignar al tercer div el id "thirdDiv".
   C. Asignar a los otros divs la clase "divClass".
-  D. Asignar al span que se encuentra dentro de su segundo div el id "spanId".
+  D. Asignar al span que se encuentra dentro de su segundo div el id "spanId". 
   E. Agregue una regla de estilo a su elemento h1 cambiando el color del texto (Listado de colores: https://www.crockford.com/wrrrld/color.html).
   F. Agregue una regla de estilo al elemento img dándole un ancho de 400px.
   G. Agregue una regla de estilo a 'thirdDiv' cambiando la altura a 600px y el ancho a 500px.
@@ -41,7 +41,7 @@ II Añade un poco de estilo
 ```
 III. Cree una hoja de estilo externa y mueva todas las reglas de estilo anteriores a la nueva hoja de estilo.
   A. Cree un archivo llamado styles.css en esta carpeta.
-  B. COPIE todas sus reglas de estilo en este nuevo archivo.
+  B. COPIE todas sus reglas de estilo en este nuevo archivo. 
   C. Agregue una etiqueta de enlace a su html que importe su nuevo archivo css.
 ```
 

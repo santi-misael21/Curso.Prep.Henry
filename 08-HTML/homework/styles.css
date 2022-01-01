@@ -1,0 +1,15 @@
+.thirdDiv{
+    background-color: rgb(192, 192, 192);
+    color:red
+}
+.thirdDiv{
+    width: 500; height: 60;
+    padding: 50px;
+    border: tomato;
+    border-style: ridge;
+    border-width: 20px;
+}
+.spanId{
+    color:white;
+    font-size: 18px;
+    margin: 50px;
