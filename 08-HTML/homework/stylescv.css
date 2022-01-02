@@ -1,0 +1,29 @@
+body{
+    background-color: black;
+}
+
+.edu{
+    
+    color: white;
+}
+.divName{
+    width: 400; 
+    color: orange;
+    margin: 0 auto;
+}
+li{
+    width: 620;
+    color:palegoldenrod;
+    
+}
+.padre {
+    background: yellow;
+    height: 100px;
+  }
+  
+  .hijo {
+    /* IMPORTANTE */
+    line-height: 100px;
+  }
+
+justify-content: center;

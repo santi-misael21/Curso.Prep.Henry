@@ -3,13 +3,20 @@
     color:red
 }
 .thirdDiv{
-    width: 500; height: 60;
-    padding: 50px;
     border: tomato;
     border-style: ridge;
-    border-width: 20px;
+    border-width: 200px;
+margin: 10rem;
+padding: 1rem;
+
+text-align: center;
 }
 .spanId{
     color:white;
     font-size: 18px;
     margin: 50px;
+}
+
+padding: 50px;
+
+width: 500; height: 60;

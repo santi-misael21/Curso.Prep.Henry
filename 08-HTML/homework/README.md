@@ -50,7 +50,7 @@ IV. Suba su trabajo a su repositorio de github`
 ```
 
 ### Crédito adicional:
->   Para hacer los extra credits, generalmente será necesario que investigue algunas cosas por su cuenta en Internet.
+>  Para hacer los extra credits, generalmente será necesario que investigue algunas cosas por su cuenta en Internet.
 
   * Establecer una imagen como fondo de toda la página
   * Centrar los div en la página
@@ -61,7 +61,7 @@ IV. Suba su trabajo a su repositorio de github`
 ## Ejercicio II
 
 ```
-Usando lo que aprendiste de HTML vas a crear un nuevo documento dentro de la carpeta de 'homework' llamado 'cv.html'. En el mismo vas crear tu propio Curriculum, deberá tener las siguientes secciones:
+Usando lo que aprendiste de HTML vas a crear un nuevo documento dentro de la carpeta de 'homework' llamado 'cv.html'. En el mismo vas a crear tu propio Curriculum, deberá tener las siguientes secciones:
 
 * Titulo
 * Descripción Personal
