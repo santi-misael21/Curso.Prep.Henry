@@ -1,0 +1,25 @@
+#container
+{
+    height: 233px;
+    width: 310px;
+    margin-right: auto;
+    margin-left: auto;
+    border:black solid 3px;
+}
+
+#image
+{    
+    position:absolute;
+}
+#text
+{
+    
+    position:absolute;    
+    color:black;
+    line-height: 233px;
+    border:black solid 1px;
+}
+
+fit-content= amoldarse al contenido
+max-content= amoldarse al max, desplegarse tanto como el párrafo lo permita
+min-content= el tamaño va a ser igual al de la palabra más larga de todo el contenido
