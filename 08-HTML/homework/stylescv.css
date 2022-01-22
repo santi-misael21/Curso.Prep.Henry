@@ -6,9 +6,10 @@ body{
    background-size: cover;
     max-width: 1015px;
     min-width: 620px;
-    border: black solid 1px;
+    border: rgba(0, 0, 0, 0.5) solid 1cm;
+    border-left: rgba(0, 0, 0, 0.5) solid 2.5cm;
     height: max-content;
-
+    
     margin: 0 auto;
 }
 

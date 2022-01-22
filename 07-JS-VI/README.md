@@ -39,8 +39,8 @@ function crearSaludo(usuario, cb) {
     return cb(usuario);
 }
 
-crearSaludo('Dan', decirHolaAlUsuario); // 'Hello Dan!'
-crearSaludo('Dan', decirAdiosAlUsuario); // 'Goodbye Dan!'
+crearSaludo('Dan', decirHolaAlUsuario); // 'Hola Dan!'
+crearSaludo('Dan', decirAdiosAlUsuario); // 'Adiós Dan!'
 ```
 
 ## Más métodos de Arrays
