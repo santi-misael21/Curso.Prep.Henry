@@ -66,7 +66,6 @@ function agregarStringInvertida() {
     //   Edad: 22,
     //   Domicilio: 'Saavedra 123'
     //  }
-    var o ={}
     class Persona 
     {
       constructor (nombre, apellido, edad, domicilio) 
